@@ -4,6 +4,8 @@
     "outDir": "./dist",
     "declaration": true,
     "emitDeclarationOnly": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "tsBuildInfoFile": "tmp/x.info"
   },
   "include": ["./src/**/*"]

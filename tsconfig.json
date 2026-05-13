@@ -14,13 +14,9 @@
     "outDir": "./dist",
     "allowJs": true,
     "checkJs": false,
-    "resolveJsonModule": true,
-    "downlevelIteration": true,
     "noImplicitAny": false,
     /* Strict Type-Checking Options */
     "strict": true,
-    /* Module Resolution Options */
-    "moduleResolution": "node",
     "esModuleInterop": true,
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,

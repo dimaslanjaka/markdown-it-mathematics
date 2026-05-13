@@ -20,8 +20,8 @@ const cjs = {
     resolve({ preferBuiltins: true }), // Resolve node_modules packages
     commonjs(), // Convert CommonJS modules to ES6
     typescript({
-      tsconfig: false,
-      compilerOptions: tsconfig.compilerOptions,
+      tsconfig: 'tsconfig.json',
+      compilerOptions: { ...tsconfig.compilerOptions, declaration: true },
       include: ['./src/**/*']
     }), // Compile TypeScript files
     json() // Support for JSON files
@@ -40,8 +40,8 @@ const esm = {
     resolve({ preferBuiltins: true }), // Resolve node_modules packages
     commonjs(), // Convert CommonJS modules to ES6
     typescript({
-      tsconfig: false,
-      compilerOptions: tsconfig.compilerOptions,
+      tsconfig: 'tsconfig.json',
+      compilerOptions: { ...tsconfig.compilerOptions, declaration: true },
       include: ['./src/**/*']
     }), // Compile TypeScript files
     json() // Support for JSON files
