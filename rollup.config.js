@@ -21,7 +21,7 @@ const cjs = {
     commonjs(), // Convert CommonJS modules to ES6
     typescript({
       tsconfig: 'tsconfig.json',
-      compilerOptions: { ...tsconfig.compilerOptions, declaration: true },
+      compilerOptions: { ...tsconfig.compilerOptions, declaration: true, ignoreDeprecations: '6.0', rootDir: '.' },
       include: ['./src/**/*']
     }), // Compile TypeScript files
     json() // Support for JSON files
@@ -41,7 +41,7 @@ const esm = {
     commonjs(), // Convert CommonJS modules to ES6
     typescript({
       tsconfig: 'tsconfig.json',
-      compilerOptions: { ...tsconfig.compilerOptions, declaration: true },
+      compilerOptions: { ...tsconfig.compilerOptions, declaration: true, ignoreDeprecations: '6.0', rootDir: '.' },
       include: ['./src/**/*']
     }), // Compile TypeScript files
     json() // Support for JSON files
