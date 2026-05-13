@@ -51,7 +51,7 @@
     "fs-extra": "^11.2.0",
     "katex": "^0.16.11",
     "markdown-it": "https://github.com/dimaslanjaka/markdown-it/raw/17ccc825cbb3e4c6d59edada5f6d93f27075d752/release/markdown-it.tgz",
-    "sbg-utility": "^1.1.8",
+    "sbg-utility": "^2.0.11",
     "upath": "^2.0.1"
   },
   "devDependencies": {
